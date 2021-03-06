@@ -1,0 +1,57 @@
+.social-links {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        margin-top: 20px;
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 50%;
+        transition: border-color 0.5s, transform 0.5s;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__icon {
+        fill: white;
+        max-width: 20px;
+        max-height: 20px;
+        transition: fill 0.5s;
+    }
+
+    &__fb:hover {
+        border-color: #3b5998;
+
+        .social-links__icon {
+            fill: #3b5998;
+        }
+    }
+
+    &__tw:hover {
+        border-color: #1DA1F2;
+
+        .social-links__icon {
+            fill: #1DA1F2;
+        }
+    }
+
+    &__inst:hover {
+        border-color: #E1306C;
+
+        .social-links__icon {
+            fill: #E1306C;
+        }
+    }
+}

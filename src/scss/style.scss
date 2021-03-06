@@ -1,0 +1,48 @@
+@import "./libs/normalize";
+@import "./libs/fonts";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: $ff-regular;
+}
+
+$main-color: #E8C300;
+
+@import "./blocks/header";
+@import "./blocks/menu";
+@import "./blocks/button";
+@import "./blocks/social-links";
+@import "./blocks/section-wrapper";
+@import "./blocks/section-title";
+@import "./blocks/section-article";
+@import "./blocks/section-img";
+@import "./blocks/about-us";
+@import "./blocks/team";
+@import "./blocks/booking";
+@import "./blocks/work-time";
+@import "./blocks/form";
+@import "./blocks/slider";
+@import "./blocks/catalog-menu";
+@import "./blocks/private";
+@import "./blocks/gallery";
+@import "./blocks/contact";
+@import "./blocks/footer";
+@import "./media/media";
+@import "./blocks/burger-menu";
+@import "./blocks/animation";
+@import "./blocks/modal";
+
+.header,
+.about-us,
+.team,
+.booking,
+.slider,
+.catalog-menu,
+.private,
+.gallery,
+.contact {
+    overflow: hidden;
+}

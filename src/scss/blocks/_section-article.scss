@@ -1,0 +1,15 @@
+.section-article {
+    display: block;
+    text-align: center;
+
+    &__top-descr {
+        margin-top: 20px;
+        font-size: 17px;
+        font-weight: 900;
+    }
+
+    &__bottom-descr {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}

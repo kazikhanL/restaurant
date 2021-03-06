@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+</head>
+<body>
+    <header class="header header--position" id="home">
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a href="#home">HOME</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#about-us">ABOUT</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#team">TEAM</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#booking">BOOKING</a>
+                </li>
+                <li class="menu__list-item">
+                    <img src="./icons/logo.svg" alt="logo">
+                </li>
+                <li class="menu__list-item">
+                    <a href="#catalog-menu">MENU</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#gallery">GALLERY</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#events">EVENTS</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__wrapper block-animation">
+            <div class="section-title">
+                <p class="section-title__sup animated animation-up">RESTAURANT</p>
+                <h1 class="section-title__main animated animation-up">hungry people</h1>
+                <div class="section-title__line animated animation-right"></div>
+            </div>
+            <div class="header__wrapper-buttons">
+                <a class="button button--link animated animation-show" href="#booking">BOOK TABLE</a>
+                <a class="button button--link button--transparent animated animation-show" href="#slider">EXPLORE</a>
+            </div>
+            <a class="header__scroll-btn animated animation-up" href="#about-us">
+                <div>
+                    <img src="./icons/arrow-btn.svg" alt="arrow">
+                </div>
+            </a>
+        </div>
+        <div class="social-links header__social-links">
+            <a class="social-links__fb" href="#">
+                <svg class="social-links__icon">
+                    <use xlink:href="./icons/social.svg#facebook"></use>
+                </svg>
+            </a>
+            <a class="social-links__tw" href="#">
+                <svg class="social-links__icon">
+                    <use xlink:href="./icons/social.svg#twitter"></use>
+                </svg>
+            </a>
+            <a class="social-links__inst" href="#">
+                <svg class="social-links__icon">
+                    <use xlink:href="./icons/social.svg#instagram"></use>
+                </svg>
+            </a>
+        </div>
+        <p class="header__work-time">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+    </header>
+
+    <section class="about-us" id="about-us">
+        <div class="section-wrapper">
+            <div class="section-wrapper__item">
+                <div class="section-article block-animation">
+                    <div class="section-title">
+                        <h2 class="section-title__top about-us__title animated animation-up">about us</h2>
+                        <div class="section-title__line animated animation-right"></div>
+                    </div>
+                    <p class="section-article__top-descr animated animation-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                    <p class="section-article__bottom-descr animated animation-up">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                </div>
+            </div>
+            <div class="section-wrapper__item">
+                <div class="section-img animated animation-show">
+                    <img src="./images/about.png" alt="about-us">
+                    <div class="section-img__square section-img__square--right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="section-title">
+            <h2 class="section-title__sup animated animation-up">our team</h2>
+        </div>
+        <div class="section-wrapper">
+            <div class="section-wrapper__item">
+                <div class="section-img animated animation-show">
+                    <img src="./images/master.png" alt="team">
+                    <div class="section-img__square section-img__square--left"></div>
+                </div>
+            </div>
+            <div class="section-wrapper__item">
+                <div class="section-article block-animation">
+                    <div class="section-title">
+                        <h2 class="section-title__top animated animation-up">MASTER CHEF</h2>
+                        <div class="section-title__line animated animation-left"></div>
+                    </div>
+                    <p class="section-article__top-descr team__title animated animation-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                    <p class="section-article__bottom-descr team__title animated animation-up">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking" id="booking">
+        <div class="section-wrapper">
+            <div class="section-wrapper__item block-animation">
+                <div class="section-title">
+                    <h2 class="section-title__top booking__title animated animation-up">book a table</h2>
+                    <div class="section-title__line animated animation-right"></div>
+                </div>
+                <form class="form" name="booking_form">
+                    <div class="form__row">
+                        <input class="animated animation-right" type="text" placeholder="Name" name="name" required>
+                        <input class="animated animation-left" type="email" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="form__row">
+                        <input class="animated animation-right" type="text" placeholder="Phone" name="phone">
+                        <select class="animated animation-left" name="people" required>
+                            <option value="" selected disabled>People</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="form__row">
+                        <input class="animated animation-right" type="text" placeholder="Date (mm/dd)" name="date" required>
+                        <select class="animated animation-left" name="time" required>
+                            <option value="" selected disabled>Time</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                            <option value="23:00">23:00</option>
+                        </select>
+                    </div>
+                    <button class="button button--full animated animation-up">BOOK NOW</button>
+                </form>
+            </div>
+            <div class="section-wrapper__item">
+                <div class="section-img animated animation-show">
+                    <img src="./images/clock.png" alt="booking">
+                    <div class="section-img__square section-img__square--right"></div>
+                </div>
+            </div>
+        </div>
+        <p class="work-time animated animation-up">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: <a href="tel:+40729131637">+40 729 131 637</a> / <a href="tel:+40726458782">+40 726 458 782</a></p>
+    </section>
+
+    <section class="slider" id="slider">
+        <div class="section-title">
+            <h2 class="section-title__sup animated animation-up">specialties</h2>
+        </div>
+        <div class="slider__wrapper">
+            <div class="slider__slide">
+                <div class="section-wrapper">
+                    <div class="section-wrapper__item">
+                        <div class="section-img animated animation-show">
+                            <img src="./images/shocolate.png" alt="slide">
+                            <div class="section-img__square section-img__square--left"></div>
+                        </div>
+                    </div>
+                    <div class="section-wrapper__item">
+                        <div class="section-article block-animation">
+                            <div class="section-title">
+                                <h2 class="section-title__top animated animation-up">chocolate pancakes</h2>
+                                <div class="section-title__line animated animation-left"></div>
+                            </div>
+                            <p class="section-article__top-descr team__title animated animation-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                            <p class="section-article__bottom-descr team__title animated animation-up">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__slide">
+                <div class="section-wrapper">
+                    <div class="section-wrapper__item">
+                        <div class="section-img">
+                            <img src="./images/shocolate.png" alt="slide">
+                            <div class="section-img__square section-img__square--left"></div>
+                        </div>
+                    </div>
+                    <div class="section-wrapper__item">
+                        <div class="section-article">
+                            <div class="section-title">
+                                <h2 class="section-title__top">chocolate pancakes</h2>
+                                <div class="section-title__line"></div>
+                            </div>
+                            <p class="section-article__top-descr team__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                            <p class="section-article__bottom-descr team__title">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__slide">
+                <div class="section-wrapper">
+                    <div class="section-wrapper__item">
+                        <div class="section-img">
+                            <img src="./images/shocolate.png" alt="slide">
+                            <div class="section-img__square section-img__square--left"></div>
+                        </div>
+                    </div>
+                    <div class="section-wrapper__item">
+                        <div class="section-article">
+                            <div class="section-title">
+                                <h2 class="section-title__top">chocolate pancakes</h2>
+                                <div class="section-title__line"></div>
+                            </div>
+                            <p class="section-article__top-descr team__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                            <p class="section-article__bottom-descr team__title">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider__dots">
+            <div class="slider__dot slider__dot--active"></div>
+            <div class="slider__dot"></div>
+            <div class="slider__dot"></div>
+        </div>
+    </section>
+
+    <section class="catalog-menu" id="catalog-menu">
+        <div class="section-title block-animation">
+            <h2 class="section-title__top booking__title animated animation-up">DELICIOUS MENU</h2>
+            <div class="section-title__line animated animation-show"></div>
+        </div>
+        <p class="section-title__sub animated animation-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Duis at velit maximus, molestie est a, tempor magna.</p>
+        <ul class="catalog-menu__tabs block-animation">
+            <li class="catalog-menu__tab catalog-menu__tab--active animated animation-show" data-section="soup"><p>SOUPE</p></li>
+            <li class="catalog-menu__tab animated animation-show" data-section="pizza"><p>PIZZA</p></li>
+            <li class="catalog-menu__tab animated animation-show" data-section="pasta"><p>PASTA</p></li>
+            <li class="catalog-menu__tab animated animation-show" data-section="desert"><p>DESERT</p></li>
+            <li class="catalog-menu__tab animated animation-show" data-section="wine"><p>WINE</p></li>
+            <li class="catalog-menu__tab animated animation-show" data-section="beer"><p>BEER</p></li>
+            <li class="catalog-menu__tab animated animation-show" data-section="drinks"><p>DRINKS</p></li>
+        </ul>
+        <div class="catalog-menu__content-wrapper">
+            <ul class="catalog-menu__tab-content catalog-menu__tab-content--active block-animation" data-section="soup">
+                <li class="catalog-menu__tab-content-item animated animation-show">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catalog-menu__tab-content-item animated animation-show">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catalog-menu__tab-content-item animated animation-show">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>SOUP QUATRO STAGIONI . . . .</h5>
+                                <span>50,98 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="catalog-menu__tab-content" data-section="pizza">
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PIZZA QUATRO STAGIONI . . . .</h5>
+                                <span>55,68 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="catalog-menu__tab-content" data-section="pasta">
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>PASTA QUATRO STAGIONI . . . .</h5>
+                                <span>33,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="catalog-menu__tab-content" data-section="desert">
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DESERT QUATRO STAGIONI . . . .</h5>
+                                <span>17,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="catalog-menu__tab-content" data-section="wine">
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>WINE QUATRO STAGIONI . . . .</h5>
+                                <span>99,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="catalog-menu__tab-content" data-section="beer">
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>BEER QUATRO STAGIONI . . . .</h5>
+                                <span>7,99 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="catalog-menu__tab-content" data-section="drinks">
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catalog-menu__tab-content-item">
+                    <ul class="catalog-menu__menu">
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                        <li class="catalog-menu__menu-item">
+                            <div>
+                                <h5>DRINK QUATRO STAGIONI . . . .</h5>
+                                <span>5,69 USD</span>
+                            </div>
+                            <p>Integer ullamcorper neque eu purus euismod</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="private" id="events">
+        <div class="section-title">
+            <p class="section-title__sup animated animation-up">PRIVATE EVENTS</p>
+        </div>
+        <div class="section-wrapper block-animation">
+            <div class="section-wrapper__item animated animation-show">
+                <div class="section-wrapper__item">
+                    <div class="section-img">
+                        <img src="./images/private-events-left.png" alt="slide">
+                        <div class="section-img__square section-img__square--left"></div>
+                        <p class="private__img-title private__img-title--right">weddings</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-wrapper__item animated animation-show">
+                <div class="section-wrapper__item">
+                    <div class="section-img">
+                        <p class="private__img-title private__img-title--left">corporate - pzrties</p>
+                        <img src="./images/private-events-right.png" alt="slide">
+                        <div class="section-img__square section-img__square--right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="work-time">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: <a href="tel:+40729131637">+40 729 131 637</a> / <a href="tel:+40726458782">+40 726 458 782</a></p>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="gallery__wrapper block-animation">
+            <img class="animated animation-show" src="./images/gallery/1.png" alt="photo">
+            <img class="animated animation-show" src="./images/gallery/2.png" alt="photo">
+            <img class="animated animation-show" src="./images/gallery/3.png" alt="photo">
+            <img class="animated animation-show" src="./images/gallery/4.png" alt="photo">
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section-title block-animation">
+            <h2 class="section-title__top booking__title animated animation-up">CONTACT</h2>
+            <div class="section-title__line animated animation-show"></div>
+        </div>
+        <p class="section-title__sub animated animation-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Duis at velit maximus, molestie est a, tempor magna.</p>
+        <form class="form contact__form block-animation" name="contact_form">
+            <div class="contact__form-row">
+                <input class="animated animation-show" type="text" name="name" placeholder="Name">
+                <input class="animated animation-show" type="email" name="email" placeholder="Email">
+                <input class="animated animation-show" type="text" name="phone" placeholder="Phone">
+            </div>
+            <textarea class="animated animation-show" name="message" placeholder="Message"></textarea>
+            <div class="contact__form-wrapper">
+                <ul class="contact__form-contacts">
+                    <li class="animated animation-show">
+                        <img src="./icons/contacts/pin.svg" alt="location">
+                        5th London Boulevard, U.K.
+                    </li>
+                    <li class="animated animation-show">
+                        <img src="./icons/contacts/call.svg" alt="phone">
+                        <div class="contact__form-phones">
+                            <a href="tel:+40729131637">+40 729 131 637</a>
+                            /
+                            <a href="tel:+40726458782">+40 726 458 782</a>
+                        </div>
+                    </li>
+                    <li class="animated animation-show">
+                        <img src="./icons/contacts/email.svg" alt="email">
+                        <a href="mailto:office@mindblister.com">office@mindblister.com</a>
+                    </li>
+                </ul>
+                <button class="button button--full animated animation-show">SEND MESSAGE</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>© Copyright <span>Mindblister</span> 2019</p>
+    </footer>
+</body>
+</html>

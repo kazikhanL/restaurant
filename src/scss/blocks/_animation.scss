@@ -1,0 +1,45 @@
+.animation-up {
+    $tm: 1.5s;
+    transition: transform $tm, opacity $tm;
+    transform: translateY(135%);
+    opacity: 0;
+
+    &--active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animation-right {
+    $tm: 1.5s;
+    transition: transform $tm, opacity $tm;
+    transform: translateX(-100%);
+    opacity: 0;
+
+    &--active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animation-left {
+    $tm: 1.5s;
+    transition: transform $tm, opacity $tm;
+    transform: translateX(100%);
+    opacity: 0;
+
+    &--active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animation-show {
+    $tm: 1.5s;
+    transition: opacity $tm, transform 0.5s;
+    opacity: 0;
+
+    &--active {
+        opacity: 1;
+    }
+}

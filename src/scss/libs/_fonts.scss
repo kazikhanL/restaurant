@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('./../fonts/OpenSans-Regular.eot');
+    src: url('./../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./../fonts/OpenSans-Regular.woff') format('woff'),
+    url('./../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bianco Serif';
+    src: url('./../fonts/BiancoSerif-Heavy.eot');
+    src: url('./../fonts/BiancoSerif-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('./../fonts/BiancoSerif-Heavy.woff') format('woff'),
+    url('./../fonts/BiancoSerif-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$ff-regular: 'Open Sans Regular';
+$ff-bold: 'Bianco Serif';

@@ -1,0 +1,15 @@
+@media(max-width: 1024px) {
+    .header {
+        &__work-time {
+            left: -8%;
+        }
+
+        &__social-links {
+            right: 3%;
+        }
+    }
+
+    .private .private__img-title {
+        font-size: 18px;
+    }
+}

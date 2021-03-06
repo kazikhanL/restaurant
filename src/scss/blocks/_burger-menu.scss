@@ -1,0 +1,111 @@
+$animation-time: 1s;
+
+.burger-menu {
+    position: fixed;
+    z-index: 10;
+
+    &__button {
+        z-index: 30;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: $main-color;
+    }
+
+    &__lines {
+        $line-width: 23px;
+        $line-height: 3px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: $line-width;
+        height: $line-height;
+        background-color: white;
+        transition: background-color $animation-time;
+
+        &::after, &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: $line-width;
+            height: $line-height;
+            background-color: white;
+            transition: transform $animation-time;
+        }
+        &::before {
+            top: -10px;
+        }
+        &::after {
+            top: 10px;
+        }
+    }
+
+    &__overlay {
+        z-index: 10;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: transparent;
+    }
+
+    &__nav {
+        z-index: 20;
+        position: absolute;
+        top: 0;
+        left: -240px;
+        transition: left $animation-time;
+        padding-top: 80px;
+        padding-left: 60px;
+        width: 240px;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+
+        ul {
+            list-style: none;
+
+            li {
+                margin-top: 25px;
+
+                a {
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 900;
+                    font-family: $ff-bold;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+.burger-menu--active {
+    .burger-menu__nav {
+        left: 0;
+    }
+
+    .burger-menu__overlay {
+        display: block;
+    }
+
+    .burger-menu__lines {
+        background-color: transparent;
+
+        &::before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+        &::after {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+    }
+}

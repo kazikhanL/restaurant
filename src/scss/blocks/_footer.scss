@@ -1,0 +1,17 @@
+.footer {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
+    p {
+        color: white;
+        font-size: 12px;
+        opacity: 0.6;
+
+        span {
+            font-weight: 900;
+        }
+    }
+}

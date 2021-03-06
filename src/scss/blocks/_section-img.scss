@@ -1,0 +1,26 @@
+.section-img {
+   position: relative;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    &__square {
+        width: 50%;
+        height: 50%;
+        border: 20px solid $main-color;
+        position: absolute;
+        top: 25%;
+        transform: translateX(-25%);
+
+        &--left {
+            left: -25%;
+            transform: translateX(25%);
+        }
+        &--right {
+            right: -25%;
+            transform: translateX(-25%);
+        }
+    }
+}

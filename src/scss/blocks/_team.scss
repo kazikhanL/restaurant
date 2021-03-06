@@ -1,0 +1,11 @@
+.team {
+    padding: 35px 0 75px 0;
+    background-image: url("./../images/team-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__title {
+        color: white;
+    }
+}

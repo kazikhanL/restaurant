@@ -1,0 +1,43 @@
+.section-title {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    
+    &__sup {
+        letter-spacing: 7px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    &__top {
+        margin: 0;
+        font-size: 36px;
+        font-family: $ff-bold;
+    }
+
+    &__main {
+        margin: 0;
+        margin-top: 14px;
+        font-size: 96px;
+        line-height: 96px;
+        font-family: $ff-bold;
+    }
+
+    &__line {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 60px;
+        height: 5px;
+        background-color: $main-color;
+        border-radius: 2px;
+    }
+
+    &__sub {
+        max-width: 70%;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-size: 17px;
+        font-weight: 900;
+        text-align: center;
+    }
+}

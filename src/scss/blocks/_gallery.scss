@@ -1,0 +1,13 @@
+.gallery {
+    overflow: hidden;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 100%;
+            max-width: 25vw;
+        }
+    }
+}
